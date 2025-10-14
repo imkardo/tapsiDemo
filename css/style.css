@@ -10,6 +10,7 @@
 /* Root Variable */
 :root {
   --color-primary: #ff5722;
+  --color-primary-light: #ff7a50;
   --color-secondary-light: #fff6f2;
   --color-secondary-dark: #ffa589;
   --color-navbar: #f8f8f8;
@@ -70,9 +71,9 @@ h3 {
   color: var(--color-white);
 }
 .btn--block {
-  width: 100%;
+  width: 80%;
   margin: 1rem 0;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 @media screen and (min-width: 1024px) {
   .btn {
@@ -148,6 +149,9 @@ h3 {
 .card__body {
   padding: 3rem 2.5rem;
 }
+.card--primary .card__header {
+  background-color: var(--color-primary-light);
+}
 .card__header {
   background-color: var(--color-secondary-dark);
   color: var(--color-white);
@@ -155,7 +159,7 @@ h3 {
   gap: 1.5rem;
   flex-direction: column;
 }
-.card__header .off {
+.card__header .plan__introdution {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -165,6 +169,16 @@ h3 {
 }
 .card__num {
   font-size: 1.4rem;
+}
+.card__body {
+  background-color: var(--color-secondary-light);
+  font-size: 2.1rem;
+}
+.card__button {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0 3rem;
+  font-size: 2rem;
 }
 @media screen and (min-width: 1024px) {
   .block-plan {
