@@ -71,9 +71,9 @@ h3 {
   color: var(--color-white);
 }
 .btn--block {
-  width: 80%;
+  width: 100%;
   margin: 1rem 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .btn {
@@ -132,12 +132,14 @@ h3 {
 /* PLAN */
 .block-plan {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
+  gap: 4rem;
   padding: 1.5rem;
+  margin-top: 4rem;
+  justify-content: center;
 }
 .plan {
-  max-width: 500px;
+  transition: all ease-in-out 0.3s;
 }
 .card {
   border-radius: 20px;
@@ -172,16 +174,35 @@ h3 {
 }
 .card__body {
   background-color: var(--color-secondary-light);
-  font-size: 2.1rem;
+  font-size: 1.8rem;
 }
 .card__button {
   display: flex;
   justify-content: center;
-  margin: 5rem 0 3rem;
-  font-size: 2rem;
+  margin: 4rem 0 1rem;
 }
-@media screen and (min-width: 1024px) {
-  .block-plan {
-    grid-template-columns: repeat(3, 1fr);
+  .plan--popular {
+    transform: scale(1.05);
   }
+@media screen and (min-width: 1024px) {
+  .plan .card__body {
+    font-size: 2rem;
+  }
+  .plan .btn--block {
+    font-size: 2rem;
+  }
+  .plan--popular {
+    transform: scale(1.1);
+  }
+  .plan:hover {
+    transform: scale(1.05);
+  }
+  .plan--popular:hover {
+    transform: scale(1.15);
+  }
+}
+/* container */
+.container {
+  max-width: 1140px;
+  margin: 5rem auto;
 }
