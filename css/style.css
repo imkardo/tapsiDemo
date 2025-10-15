@@ -206,3 +206,21 @@ h3 {
   max-width: 1140px;
   margin: 5rem auto;
 }
+/* FEATURES */
+.feature {
+  width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.feature article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.feature-title{
+  margin-bottom: 1rem;
+}
+.feature-img img {
+  width: 100%;
+  object-fit: cover;
+}
