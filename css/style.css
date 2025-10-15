@@ -251,4 +251,7 @@ h3 {
     flex-direction: row-reverse;
     gap: 1rem;
   }
+  .feature__button {
+    padding: 1.3rem 2.5rem;
+  }
 }
