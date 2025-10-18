@@ -381,3 +381,26 @@ textarea {
     justify-content: flex-end;
   }
 }
+/* FOOTER */
+
+.main-footer {
+  background-color: #000;
+  color: #fff;
+  min-height: 200px;
+}
+.main-footer .footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer__item a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.footer__item h6 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
