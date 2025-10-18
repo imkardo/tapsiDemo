@@ -283,30 +283,63 @@ h3 {
 }
 .contact__lists ul {
   display: flex;
-  gap: 1.4rem;
   flex-direction: column;
   font-size: 1.2rem;
-  align-items: center;
-  justify-content: center;
   height: auto;
 }
+.contact__lists ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 1rem;
+}
 .contact__lists ul i {
-  font-size: 2.4rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 .contact__socials ul {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  font-size: 2.6rem;
-  gap: 0.7rem;
+  font-size: 3.5rem;
+  gap: 2rem;
+  justify-content: center;
 }
 .contact-us__title {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 400;
   text-align: center;
 }
-
+.contact-us__form {
+  text-align: center;
+}
+.contact-us__form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  height: 100%;
+  padding: 1rem 5rem;
+  margin: 1.5rem;
+  gap: 3rem;
+}
+.contact-us__form input,
+textarea {
+  padding: 1.7rem;
+  border-radius: 40px;
+  border: none;
+  background-color: #f5f5f5;
+}
+.contact-us__form textarea {
+  resize: none;
+  height: 200px;
+  border-radius: 10px;
+}
+.contact-us__form button {
+  width: fit-content;
+  align-self: flex-end;
+  border-radius: 40px;
+}
 @media screen and (min-width: 1024px) {
   .contact-us {
     grid-template-areas:
@@ -335,6 +368,7 @@ h3 {
   .contact__lists ul {
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
   }
   .contact__lists ul li {
     display: flex;
@@ -344,5 +378,6 @@ h3 {
   }
   .contact__socials ul {
     padding-left: 4rem;
+    justify-content: flex-end;
   }
 }
