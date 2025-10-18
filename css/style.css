@@ -204,7 +204,7 @@ h3 {
 /* container */
 .container {
   max-width: 1140px;
-  margin: 5rem auto;
+  margin: 1rem auto;
 }
 /* FEATURES */
 .feature {
@@ -387,10 +387,16 @@ textarea {
   background-color: #000;
   color: #fff;
   min-height: 200px;
+  padding:3rem;
 }
 .main-footer .footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer__item{
+  margin-bottom: 2.5rem;
 }
 .footer__item a {
   text-decoration: none;
@@ -402,5 +408,27 @@ textarea {
 .footer__item h6 {
   font-size: 1.8rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+.footer__item.enamad{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.footer__enamad{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem 0.5rem;
+  max-width: 8rem;
+  margin: 1rem;
+}
+.footer__enamad img{
+  width: 100% ;
+}
+@media screen and (min-width:1024px) {
+  .main-footer .footer{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
 }
