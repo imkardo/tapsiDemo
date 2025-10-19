@@ -183,7 +183,7 @@ h3 {
   margin: 4rem 0 1rem;
 }
 .plan--popular {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 @media screen and (min-width: 1024px) {
   .plan .card__body {
@@ -204,7 +204,7 @@ h3 {
 }
 /* container */
 .container {
-  max-width: 1140px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 /* FEATURES */
@@ -212,7 +212,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 5rem;
-  margin:6rem auto;
+  margin: 6rem auto;
   padding: 2rem;
   max-width: 360px;
 }
@@ -302,7 +302,7 @@ h3 {
   display: flex;
   align-items: center;
   font-size: 3.5rem;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
 }
 .contact-us__title {
@@ -320,7 +320,7 @@ h3 {
   border: 1px solid #dddddd;
   border-radius: 20px;
   height: 100%;
-  padding: 1rem 5rem;
+  padding: 1rem;
   margin: 1.5rem;
   gap: 3rem;
 }

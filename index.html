@@ -11,6 +11,7 @@
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Tapsi Demo</title>
   </head>
   <body dir="rtl">
@@ -43,7 +44,10 @@
       </nav>
     </header>
     <section class="hero-section">
-      <div class="hero--content container">
+      <div
+        class="hero--content container"
+        data-aos="fade-up"
+        data-aos-duration="1000">
         <div class="intro-btn">
           <div class="intro--title">
             <h1>تپسی</h1>
@@ -65,7 +69,8 @@
         </div>
       </div>
     </section>
-    <section class="feature container">
+    <section
+      class="feature container">
       <article class="vehicles--article">
         <div class="feature__body">
           <h3 class="feature__title">سرویس های تپسی</h3>
@@ -76,7 +81,8 @@
         <div class="feature__img">
           <img src="/assets/images/car.webp" alt="" />
         </div>
-        <div class="feature__body">
+        <div class="feature__body data-aos="fade-up"
+      data-aos-duration="1000">
           <h3 class="feature__title">تپسی پلاس</h3>
           <p class="feature__text">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -89,9 +95,10 @@
       </article>
       <article>
         <div class="feature__img">
-          <img src="/assets/images/imac.webp" alt="" />
+          <img src="./assets/images/imac.webp" alt="" />
         </div>
-        <div class="feature__body">
+        <div class="feature__body data-aos="fade-up"
+      data-aos-duration="1000">
           <h3 class="feature__title">خدمات تپسی برای کسب و کارها</h3>
           <p class="feature__text">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -107,7 +114,7 @@
       </article>
       <article>
         <div class="feature__img">
-          <img src="/assets/images/macbook.webp" alt="" />
+          <img src="./assets/images/macbook.webp" alt="" />
         </div>
         <div class="feature__body">
           <h3 class="feature__title">خدمات تپسی برای کسب و کارها</h3>
@@ -124,7 +131,10 @@
         </div>
       </article>
     </section>
-    <section class="block-plan container block">
+    <section
+      class="block-plan container block"
+      data-aos="fade-up"
+      data-aos-duration="1000">
       <div class="plan">
         <article class="card card--secondary">
           <header class="card__header">
@@ -214,7 +224,7 @@
         </article>
       </div>
     </section>
-    <section class="contact-us container block">
+    <section class="contact-us container block" data-aos="fade-up" data-aos-duration="1000">
       <div class="contact-us__title">
         <h3>ارتباط با ما</h3>
         <p>
@@ -319,5 +329,9 @@
     </footer>
 
     <script src="./js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
