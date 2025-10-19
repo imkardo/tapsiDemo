@@ -204,7 +204,7 @@ h3 {
 /* container */
 .container {
   max-width: 1140px;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 /* FEATURES */
 .feature {
@@ -432,6 +432,9 @@ textarea {
   }
 }
 /* Navbar */
+.main-header {
+  background-color: var(--color-navbar);
+}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -455,4 +458,31 @@ textarea {
   height: 3rem;
   width: 3rem;
   padding: 1rem;
+}
+.nav__item .btn {
+  display: none;
+  border-radius: 50px;
+  width: fit-content;
+  padding: 0.7rem 3rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+    align-items: center;
+    gap: 1rem 2rem;
+  }
+  .nav__item a {
+    text-decoration: none;
+    color: var(--color-body);
+    padding: 0.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav__item .btn {
+    display: block;
+    color: var(--color-white);
+  }
 }
