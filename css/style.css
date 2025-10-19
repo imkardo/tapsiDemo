@@ -387,7 +387,7 @@ textarea {
   background-color: #000;
   color: #fff;
   min-height: 200px;
-  padding:3rem;
+  padding: 3rem;
 }
 .main-footer .footer {
   display: flex;
@@ -395,7 +395,7 @@ textarea {
   align-items: center;
   justify-content: center;
 }
-.footer__item{
+.footer__item {
   margin-bottom: 2.5rem;
 }
 .footer__item a {
@@ -410,25 +410,49 @@ textarea {
   font-weight: bold;
   margin-bottom: 1rem;
 }
-.footer__item.enamad{
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
+.footer__item.enamad {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.footer__enamad{
+.footer__enamad {
   background-color: #fff;
   border-radius: 10px;
   padding: 1rem 0.5rem;
   max-width: 8rem;
   margin: 1rem;
 }
-.footer__enamad img{
-  width: 100% ;
+.footer__enamad img {
+  width: 100%;
 }
-@media screen and (min-width:1024px) {
-  .main-footer .footer{
+@media screen and (min-width: 1024px) {
+  .main-footer .footer {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  
+}
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  align-items: center;
+  height: 60px;
+}
+.nav a {
+  width: 10.5rem;
+}
+.nav a img {
+  width: 100%;
+}
+.nav__list {
+  display: none;
+}
+.nav__toggler {
+  background: url(../assets/images/menu.png);
+  background-size: cover;
+  background-position: center;
+  height: 3rem;
+  width: 3rem;
+  padding: 1rem;
 }
