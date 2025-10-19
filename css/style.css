@@ -544,6 +544,7 @@ a:hover {
   justify-content: space-around;
   margin: 0 auto;
   padding: 2rem;
+  z-index: 1;
 }
 .intro-btn h1 {
   color: var(--color-white);
