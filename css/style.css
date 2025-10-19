@@ -521,6 +521,7 @@ textarea {
 }
 a:hover {
   cursor: pointer;
+  color: var(--color-primary);
 }
 /* Hero */
 .hero-section {
