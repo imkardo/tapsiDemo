@@ -683,6 +683,7 @@ a:hover {
 /* Accordion */
 .accordion-main {
   padding: 1rem;
+  margin: 4rem 0 10rem;
 }
 .accordion__header {
   display: flex;
@@ -737,8 +738,15 @@ a:hover {
 .accordion__intro span i {
   font-size: 2.3rem;
 }
+.accordion-main h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.accordion-main .accordion__title {
+  font-weight: 700;
+}
 @media screen and (min-width: 1024px) {
-  h2 {
+  .accordion-main h2 {
     font-size: 2.2rem;
   }
 }
