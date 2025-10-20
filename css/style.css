@@ -623,11 +623,14 @@ a:hover {
   align-items: center;
   overflow: hidden;
   overflow-x: auto;
-  padding:1rem;
-  gap:1rem ;
+  padding: 2rem;
+  gap: 1.3rem;
+}
+.travell__slides::-webkit-scrollbar {
+  display: none;
 }
 .travell__slide {
-  flex: 0 0 300px;
+  flex: 0 0 280px;
 }
 .slide__img {
   height: 200px;
@@ -660,13 +663,13 @@ a:hover {
 }
 .slide__text {
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   padding: 1.5rem 0.7rem;
 }
 .slide__icons {
   display: flex;
   justify-content: space-between;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #cacaca;
   padding: 0 0.5rem;
 }
