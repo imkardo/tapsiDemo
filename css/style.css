@@ -389,7 +389,7 @@ textarea {
   background-color: #000;
   color: #fff;
   min-height: 200px;
-  padding: 3rem;
+  padding: 10rem 3rem;
 }
 .main-footer .footer {
   display: flex;
@@ -794,7 +794,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
 }
-.slide__footer:last-child{
+.slide__footer:last-child {
   color: var(--color-primary);
   font-size: 1.5rem;
 }
