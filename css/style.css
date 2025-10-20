@@ -623,10 +623,11 @@ a:hover {
   align-items: center;
   overflow: hidden;
   overflow-x: auto;
-  padding-bottom: 2rem;
+  padding:1rem;
+  gap:1rem ;
 }
 .travell__slide {
-  flex: 0 0 290px;
+  flex: 0 0 300px;
 }
 .slide__img {
   height: 200px;
@@ -657,9 +658,18 @@ a:hover {
   padding: 0 1rem;
   margin-left: 0.7rem;
 }
-
 .slide__text {
   font-weight: bold;
   font-size: 1.8rem;
-  padding: 1rem 0.7rem;
+  padding: 1.5rem 0.7rem;
+}
+.slide__icons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  color: #cacaca;
+  padding: 0 0.5rem;
+}
+.slide__icons i {
+  margin: 0 0.4rem;
 }
