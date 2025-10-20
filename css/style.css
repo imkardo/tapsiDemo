@@ -614,3 +614,52 @@ a:hover {
 .block {
   margin: 12rem auto;
 }
+
+/* Travell Slides */
+.travell__slides {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: auto;
+  padding-bottom: 2rem;
+}
+.travell__slide {
+  flex: 0 0 290px;
+}
+.slide__img {
+  height: 200px;
+}
+.slide__img img {
+  object-fit: cover;
+  object-position: bottom;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+}
+.slide__detail {
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  padding: 1rem 1.5rem;
+  transform: translateY(-60px);
+  width: 80%;
+  margin: 0 auto;
+}
+.slide__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.2rem;
+}
+.slide__header .badge {
+  padding: 0 1rem;
+  margin-left: 0.7rem;
+}
+
+.slide__text {
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 1rem 0.7rem;
+}
