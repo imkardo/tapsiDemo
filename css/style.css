@@ -681,10 +681,15 @@ a:hover {
 }
 
 /* Accordion */
+.accordion-main {
+  padding: 1rem;
+}
 .accordion__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  border-bottom: 2px solid #ececec;
 }
 .accordion__heading {
   margin-bottom: 0;
@@ -694,12 +699,13 @@ a:hover {
   overflow: hidden;
   opacity: 0;
   transition: all 0.4s ease-out;
-  border: 1px solid #cacaca;
-  border-radius: 1rem;
+  border-bottom: 2px solid #ececec;
+  padding: 0 4rem;
 }
 .accordion__expanded .accordion__content {
   max-height: 100vh;
   opacity: 1;
+  padding: 2rem 4rem;
 }
 .accordion .icon i {
   font-size: 2rem;
@@ -714,6 +720,25 @@ a:hover {
   border: 2px solid #ececec;
   box-shadow: 0 9px 12px rgba(0, 0, 0, 0.05);
 }
-.accordion__header {
-  background-color: gold;
+.accordion__intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 2px solid #ececec;
+}
+.accordion__intro span {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-primary);
+}
+.accordion__intro span i {
+  font-size: 2.3rem;
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 2.2rem;
+  }
 }
