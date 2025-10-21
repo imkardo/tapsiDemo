@@ -413,6 +413,7 @@ textarea {
   margin-bottom: 1rem;
 }
 .footer__item.enamad {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -427,14 +428,16 @@ textarea {
 .footer__enamad img {
   width: 100%;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   .main-footer .footer {
     flex-direction: row;
     justify-content: space-evenly;
   }
+  .footer__item.enamad {
+    width: fit-content;
+  }
 }
-@media screen and (min-width: 1024px) {
-}
+
 /* Navbar */
 .main-header {
   background-color: var(--color-navbar);
